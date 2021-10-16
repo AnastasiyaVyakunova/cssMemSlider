@@ -132,4 +132,78 @@ label:hover::after {
   background-color: transparent;
 }
 
+@media (max-width: 360px) {
+  .container {
+    width: 320px;
+    padding: 40px 20px 0 20px;
+    justify-content: center;
+  }
 
+  .main-wrapper {
+    width: 320px;
+    height: 250px;
+    order: 0;
+  }
+
+  .text-wrapper {
+    width: 320px;
+    height: 50px;
+    order: 1;
+  }
+
+  .text-slider {
+    width: 320px;
+    height: 280px;
+  }
+
+  p {
+    width: 320px;
+    margin: 12px 0;
+  }
+
+  .slides {
+    width: 320px;
+    height: 250px;
+  }
+
+  #slide1:checked ~ .main-wrapper > .slider  {
+    margin-left: 0;
+    transition: margin-left 0.5s ease-out;
+  }
+  
+  #slide2:checked ~ .main-wrapper > .slider  {
+    margin-left: -320px;
+    transition: margin-left 0.5s ease-out;
+  }
+  
+  #slide3:checked ~ .main-wrapper > .slider {
+    margin-left: -640px;
+    transition: margin-left 0.5s ease-out;
+  }
+  
+  #slide4:checked ~ .main-wrapper > .slider {
+    margin-left: -960px;
+    transition: margin-left 0.5s ease-out;
+  }
+
+  #slide1:checked ~ .text-wrapper > .text-slider {
+    margin-top: 0;
+    transition: margin-top 0.5s ease-out;
+  }
+  
+  #slide2:checked ~ .text-wrapper > .text-slider {
+    margin-top: -42px;
+    transition: margin-top 0.5s ease-out;
+  }
+  
+  #slide3:checked ~ .text-wrapper > .text-slider {
+    margin-top: -84px;
+    transition: margin-top 0.5s ease-out;
+  }
+  
+  #slide4:checked ~ .text-wrapper > .text-slider {
+    margin-top: -126px;
+    transition: margin-top 0.5s ease-out;
+  }
+
+}
