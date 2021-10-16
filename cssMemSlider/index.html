@@ -4,37 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Mem Slider</title>
 </head>
 <body>
   <div class="container">
+    <input type="radio" name="point" id="slide1" checked>
+    <input type="radio" name="point" id="slide2">
+    <input type="radio" name="point" id="slide3">
+    <input type="radio" name="point" id="slide4">
     <div class="main-wrapper">
-      <input type="radio" name="point" id="slide1" checked>
-      <input type="radio" name="point" id="slide2">
-      <input type="radio" name="point" id="slide3">
-      <input type="radio" name="point" id="slide4">
       <div class="slider">
-        <img class="slides slide1" src="" alt="">
-        <img class="slides slide2" src="" alt="">
-        <img class="slides slide3" src="" alt="">
-        <img class="slides slide4" src="" alt="">
+        <img class="slides slide1" src="img/slide1.jpeg" alt="profit">
+        <img class="slides slide2" src="img/slide2.jpg" alt="lion">
+        <img class="slides slide3" src="img/slide3.jpg" alt="crisps">
+        <img class="slides slide4" src="img/slide4.jpg" alt="nice">
       </div>
-      <div class="wrapper">
+    </div>
+    <div class="wrapper">
+      <div class="text-wrapper">
         <div class="text-slider">
-          <p class="text-slide1"></p>
-          <p class="text-slide2"></p>
-          <p class="text-slide3"></p>
-          <p class="text-slide4"></p>
-        </div>
-        <div class="controls">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-          <label for="slide4"></label>
+          <p class="text-slide1">Get profit</p>
+          <p class="text-slide2">Lion always right</p>
+          <p class="text-slide3">My lovely crisps</p>
+          <p class="text-slide4">Nice!</p>
         </div>
       </div>
     </div>
+    
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+    <label for="slide4"></label>
   </div>
   
 </body>
