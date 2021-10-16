@@ -55,11 +55,6 @@ input {
   height: 600px;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .text-wrapper {
   width: 680px;
   height: 70px;
@@ -69,6 +64,26 @@ input {
 .text-slider {
   width: 200px;
   height: 280px;
+}
+
+#slide1:checked ~ .text-wrapper > .text-slider {
+  margin-top: 0;
+  transition: margin-top 0.5s ease-out;
+}
+
+#slide2:checked ~ .text-wrapper > .text-slider {
+  margin-top: -52px;
+  transition: margin-top 0.5s ease-out;
+}
+
+#slide3:checked ~ .text-wrapper > .text-slider {
+  margin-top: -104px;
+  transition: margin-top 0.5s ease-out;
+}
+
+#slide4:checked ~ .text-wrapper > .text-slider {
+  margin-top: -156px;
+  transition: margin-top 0.5s ease-out;
 }
 
 p {
